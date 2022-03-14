@@ -1,0 +1,176 @@
+.list-element {
+  padding: 1rem;
+  border-radius: 0.25rem;
+  background-color: var(--tile-background);
+  border: 0.2rem solid var(--border-color);
+  color: var(--text-primary);
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.25s;
+  float: left;
+  width: 15rem;
+  height: 15rem;
+  /* display: inline-block; */
+  /* width: auto; */
+}
+
+.list-element:hover {
+  cursor: pointer;
+  background-color: var(--tile-background-hover);
+}
+
+.list-element:hover img {
+  width: 10rem;
+  height: 10rem;
+}
+
+.list-element img {
+  transition: all 0.15s;
+  width: 8rem;
+  height: 8rem;
+  display: flex;
+  float: right;
+}
+
+.default-data {
+  float: left;
+  width: 100%;
+  margin-top: 0.25rem;
+}
+
+.image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.name {
+  font-size: 2rem;
+  text-transform: capitalize;
+  padding-right: 1rem;
+}
+
+.types {
+  font-size: 0.75rem;
+  text-transform: capitalize;
+  display: flex;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.type {
+  padding: 0.125rem 0.5rem;
+  border: 1px solid var(--border-color);
+  width: 4rem;
+  margin-right: 0.25rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+[data-visible="yes"] {
+  display: inline-block;
+}
+
+[data-visible="no"] {
+  display: none;
+}
+
+/* start of classes of particular types */
+
+.grass {
+  background-color: green;
+  color: #f5f2e7;
+}
+
+.fire {
+  background-color: rgb(241, 89, 0);
+  color: #f5f2e7;
+}
+
+.poison {
+  background-color: rgb(94, 0, 202);
+  color: #f5f2e7;
+}
+
+.bug {
+  background-color: rgb(150, 67, 0);
+  color: #f5f2e7;
+}
+
+.water {
+  background-color: rgb(0, 189, 202);
+  color: #202020;
+}
+
+.flying {
+  background-color: rgb(0, 156, 228);
+  color: #f5f2e7;
+}
+
+.electric {
+  background-color: rgb(255, 251, 0);
+  color: #202020;
+}
+
+.ground {
+  background-color: rgb(82, 39, 0);
+  color: #f5f2e7;
+}
+
+.normal {
+  background-color: rgb(122, 122, 122);
+  color: #f5f2e7;
+}
+
+.fighting {
+  background-color: rgb(170, 0, 0);
+  color: #f5f2e7;
+}
+
+.psychic {
+  background-color: rgb(252, 0, 155);
+  color: #f5f2e7;
+}
+
+.rock {
+  background-color: rgb(68, 73, 0);
+  color: #f5f2e7;
+}
+
+.dragon {
+  background-color: rgb(77, 0, 51);
+  color: #f5f2e7;
+}
+
+.fairy {
+  background-color: rgb(255, 107, 206);
+  color: #202020;
+}
+
+.ice {
+  background-color: rgb(130, 255, 249);
+  color: #202020;
+}
+
+.ghost {
+  background-color: rgb(209, 209, 209);
+  color: #202020;
+}
+
+.steel {
+  background-color: rgb(78, 78, 78);
+  color: #f5f2e7;
+}
+
+.dark {
+  background-color: rgb(15, 15, 15);
+  color: #f5f2e7;
+}
+
+.shadow {
+  background-color: rgb(255, 255, 255);
+  color: #202020;
+}
+
+/* start of classes of particular types */

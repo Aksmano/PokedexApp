@@ -1,0 +1,29 @@
+.container {
+  margin: 0rem 0 0 0;
+  transition: margin 0.25s;
+}
+
+/* .show-pokelist {
+  margin-top: 10rem;
+} */
+
+.list-container {
+  width: 80vw;
+  min-height: calc(100vh - 7rem);
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.button-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.load-more {
+  padding: 1rem 1.5rem;
+  margin: 2rem;
+}
