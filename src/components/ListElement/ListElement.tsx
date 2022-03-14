@@ -7,6 +7,8 @@ interface ListElementProps {
   pokemon: Pokemon;
 }
 
+/* Tile element of the PokeList.tsx */
+
 const ListElement = ({ pokemon }: ListElementProps) => {
   const [types, setTypes] = useState<JSX.Element[]>([]);
   const [isImageLoaded, setIsImageLoaded] = useState<boolean>(false);

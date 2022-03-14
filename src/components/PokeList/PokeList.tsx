@@ -14,6 +14,8 @@ interface ListProps {
 
 const API_URL: string = "https://pokeapi.co/api/v2/";
 
+/* Responsive table of Pokemons */
+
 const PokeList = ({
   fetchData,
   pokemonsAPI,
@@ -24,6 +26,9 @@ const PokeList = ({
   const [offset, setOffset] = useState<number>(0);
   const [limit, setLimit] = useState<number>(20);
   const [pokemonsJSX, setPokemonsJSX] = useState<JSX.Element[]>([]);
+
+  /* Function for fetching pokemon api, adding it to the currently
+     fetched pokemons state and creating ListElements of it */
 
   const loadPokemonList = async () => {
     setLoading(true);
@@ -60,6 +65,8 @@ const PokeList = ({
     setLoading(false);
   };
 
+  /* Function for loading currently fetched pokemons after coming back
+     from PokemonDetails component  */
   const loadFetchedPokemonList = () => {
     let newOffset: number = 0;
     const pokemonsList: JSX.Element[] = pokemonsAPI.map((pokemon: Pokemon) => {

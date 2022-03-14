@@ -10,6 +10,8 @@ interface FiltersProps {
   setOnSubmitFilter: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
+/* A menu bar for handling filters, currently only UI */
+
 const Filters = ({
   filterMode,
   nameFilter,
@@ -92,22 +94,5 @@ const Filters = ({
     </div>
   );
 };
-
-// interface FiltersProps {}
-
-// interface FiltersState {
-//   visible: boolean;
-//   nameOrId: string;
-// }
-
-// class Filters extends Component<FiltersProps, FiltersState> {
-//   state: Readonly<FiltersState> = {
-//     visible: true,
-//     nameOrId: "",
-//   };
-
-//   render(): React.ReactNode {
-//   }
-// }
 
 export default Filters;

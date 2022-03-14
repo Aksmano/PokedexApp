@@ -12,6 +12,8 @@ interface PDProps {
 
 const API_URL: string = "https://pokeapi.co/api/v2/";
 
+/* Component for rendering detailed data about pokemons */
+
 const PokemonDetails = ({ pokemons, fetchData, switchShowFilter }: PDProps) => {
   const { id } = useParams<string>();
 
@@ -24,6 +26,7 @@ const PokemonDetails = ({ pokemons, fetchData, switchShowFilter }: PDProps) => {
     setPokemon(pokemonAPI);
   };
 
+  // Funcition for creating info about stats
   const createStats = async () => {
     let i: number = 0;
     const fetchedStats: JSX.Element[] = pokemon.stats.map((item) => {
@@ -39,6 +42,7 @@ const PokemonDetails = ({ pokemons, fetchData, switchShowFilter }: PDProps) => {
     setStats(fetchedStats);
   };
 
+  // Funcition for creating info about types
   const createTypes = async () => {
     let i: number = 0;
     const fetchedTypes: JSX.Element[] = pokemon.types.map((item) => {

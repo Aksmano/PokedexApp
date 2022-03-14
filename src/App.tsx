@@ -23,6 +23,7 @@ const App = () => {
   const [typeFilter, setTypeFilter] = useState<string>("");
   const [onSubmitFilter, setOnSubmitFilter] = useState<boolean>(false);
 
+  // Functions for switching values
   const switchTheme = () => {
     const newTheme = theme === "light" ? "dark" : "light";
     setTheme(newTheme);

@@ -1,11 +1,7 @@
 import React from "react";
 import "./Loader.css";
 
-// interface LoaderProps {
-//   styles: string;
-// }
-
-const Loader = (/*{ styles }: LoaderProps*/) => {
+const Loader = () => {
   return <div className="lds-dual-ring"></div>;
 };
 

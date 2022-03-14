@@ -1,7 +1,6 @@
 import React from "react";
 import Filters from "../Filters/Filters";
 import "./FiltersBar.css";
-
 interface FiltersBarProps {
   filterMode: string;
   nameFilter: string;
@@ -11,6 +10,8 @@ interface FiltersBarProps {
   setTypeFilter: React.Dispatch<React.SetStateAction<string>>;
   setOnSubmitFilter: React.Dispatch<React.SetStateAction<boolean>>;
 }
+
+/* Filters menu with a button under it */
 
 const FiltersBar = ({
   filterMode,
